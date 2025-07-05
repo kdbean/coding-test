@@ -1,0 +1,6 @@
+SELECT a.FLAVOR
+  FROM FIRST_HALF a
+ WHERE 1=1
+ORDER BY
+       a.TOTAL_ORDER desc
+     , a.SHIPMENT_ID 
