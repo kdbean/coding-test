@@ -1,0 +1,3 @@
+SELECT count(1) as COUNT
+  FROM ANIMAL_INS a
+  
