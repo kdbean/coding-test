@@ -1,0 +1,6 @@
+SELECT a.*
+  FROM CAR_RENTAL_COMPANY_CAR a
+ WHERE 1=1
+   AND OPTIONS like '%네비게이션%'
+ORDER BY
+       a.CAR_ID desc
