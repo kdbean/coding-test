@@ -1,0 +1,8 @@
+SELECT a.FACTORY_ID
+     , a.FACTORY_NAME
+     , a.ADDRESS
+  FROM FOOD_FACTORY a
+ WHERE 1=1
+   AND a.ADDRESS like '%강원도%'
+ORDER BY
+       a.FACTORY_ID
