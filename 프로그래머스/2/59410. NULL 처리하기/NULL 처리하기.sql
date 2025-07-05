@@ -1,0 +1,7 @@
+SELECT a.ANIMAL_TYPE
+     , nvl(a.NAME, 'No name') as NAME
+     , a.SEX_UPON_INTAKE
+  FROM ANIMAL_INS a
+ WHERE 1=1
+ORDER BY
+       a.ANIMAL_ID
