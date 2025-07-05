@@ -1,0 +1,6 @@
+SELECT a.ANIMAL_ID
+     , a.NAME
+  FROM ANIMAL_INS a
+ WHERE 1=1
+ORDER BY 
+       a.ANIMAL_ID
