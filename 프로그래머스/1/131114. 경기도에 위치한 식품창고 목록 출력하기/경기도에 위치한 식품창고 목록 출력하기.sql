@@ -1,0 +1,8 @@
+SELECT a.WAREHOUSE_ID
+     , a.WAREHOUSE_NAME
+     , a.ADDRESS
+     , nvl(a.FREEZER_YN, 'N') as FREEZER_YN
+  FROM FOOD_WAREHOUSE a
+ WHERE a.ADDRESS like '%경기도%'
+ORDER BY
+       a.WAREHOUSE_ID
