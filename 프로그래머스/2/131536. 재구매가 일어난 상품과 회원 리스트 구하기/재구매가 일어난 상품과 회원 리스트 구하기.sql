@@ -1,0 +1,11 @@
+SELECT a.USER_ID
+     , a.PRODUCT_ID
+  FROM ONLINE_SALE a
+ WHERE 1=1 
+GROUP BY
+       a.USER_ID
+     , a.PRODUCT_ID
+ HAVING count(1) > 1
+ORDER BY
+       a.USER_ID
+     , PRODUCT_ID desc
