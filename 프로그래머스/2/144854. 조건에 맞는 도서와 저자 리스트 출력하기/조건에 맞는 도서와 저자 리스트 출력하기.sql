@@ -1,0 +1,10 @@
+SELECT a.BOOK_ID
+     , b.AUTHOR_NAME
+     , to_char(a.PUBLISHED_DATE, 'yyyy-mm-dd') as PUBLISHED_DATE
+  FROM BOOK a
+  LEFT OUTER JOIN AUTHOR b on a.AUTHOR_ID = b.AUTHOR_ID
+ WHERE 1=1
+   AND a.CATEGORY = '경제'
+ORDER BY
+       a.PUBLISHED_DATE
+  
